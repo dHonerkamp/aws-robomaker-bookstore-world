@@ -30,6 +30,9 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
 
+      <include>
+          <uri>model://ground_plane</uri>
+      </include>
 
 	<model name="AirConditionerC_01_001">
         <include>
@@ -326,7 +329,7 @@
         </include>
         <pose frame="">3.430611 0.856469 1.038157 0.000008 0 1.580378</pose>
 	</model>
-             
+
        <model name="BookshelfA_01_001">
         <include>
             <uri>model://aws_robomaker_retail_BookshelfA_01</uri>
@@ -449,7 +452,7 @@
         <pose frame="">2.236470 4.4969866 2.248438 0 0 0</pose>
 	</model>
     -->
-	
+
     <!-- Exclude ceiling, easier to view -->
     <!--
 	<model name="RetailShopCeiling_01_001">
@@ -587,19 +590,19 @@
         <pose frame="">0.284724 4.951315 1.08517 -0.004006 -0.000097 -0.010660</pose>
 	</model>
 
-	<model name="SecurityCamera_01_001">
-        <include>
-            <uri>model://aws_robomaker_retail_SecurityCamera_01</uri>
-        </include>
-        <pose frame="">-1.308807 2.973710 1.037756 -0.004006 -0.000097 -0.010660</pose>
-	</model>
+<!--	<model name="SecurityCamera_01_001">-->
+<!--        <include>-->
+<!--            <uri>model://aws_robomaker_retail_SecurityCamera_01</uri>-->
+<!--        </include>-->
+<!--        <pose frame="">-1.308807 2.973710 1.037756 -0.004006 -0.000097 -0.010660</pose>-->
+<!--	</model>-->
 
-	<model name="SecurityCamera_01_002">
-        <include>
-            <uri>model://aws_robomaker_retail_SecurityCamera_01</uri>
-        </include>
-        <pose frame="">-3.904507 3.590531 1.037756 0 0 3.050913</pose>
-	</model>
+<!--	<model name="SecurityCamera_01_002">-->
+<!--        <include>-->
+<!--            <uri>model://aws_robomaker_retail_SecurityCamera_01</uri>-->
+<!--        </include>-->
+<!--        <pose frame="">-3.904507 3.590531 1.037756 0 0 3.050913</pose>-->
+<!--	</model>-->
 
 	<model name="InfoDesk_01_001">
         <include>
@@ -664,12 +667,12 @@
         <pose frame="">-2.492457 7.219370 -0.035203 0 -0 0</pose>
 	</model>
 
-	<model name="RetailShopFloor_01_001">
-        <include>
-            <uri>model://aws_robomaker_retail_RetailShopFloor_01</uri>
-        </include>
-        <pose frame="">-0.002687 0 -0.276618 -0 0 0</pose>
-	</model>
+<!--	<model name="RetailShopFloor_01_001">-->
+<!--        <include>-->
+<!--            <uri>model://aws_robomaker_retail_RetailShopFloor_01</uri>-->
+<!--        </include>-->
+<!--        <pose frame="">-0.002687 0 -0.276618 -0 0 0</pose>-->
+<!--	</model>-->
 
 	<model name="TabletB_01_001">
         <include>
@@ -1026,12 +1029,12 @@
 
 
 
-	<model name="Spotlight_01_001">
-        <include>
-            <uri>model://aws_robomaker_retail_Spotlight_01</uri>
-        </include>
-        <pose frame="">1.493200 4.692372 3.302658 0 -0 0</pose>
-	</model>
+<!--	<model name="Spotlight_01_001">-->
+<!--        <include>-->
+<!--            <uri>model://aws_robomaker_retail_Spotlight_01</uri>-->
+<!--        </include>-->
+<!--        <pose frame="">1.493200 4.692372 3.302658 0 -0 0</pose>-->
+<!--	</model>-->
 
 	<model name="ShopWindow_01_001">
         <include>
@@ -1135,5 +1138,8 @@
       <cast_shadows>0</cast_shadows>
       <direction>0 0 -1</direction>
     </light>
+
+    <plugin filename="libcollision_map_creator.so" name="collision_map_creator"/>
+
   </world>
 </sdf>

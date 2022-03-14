@@ -13,20 +13,12 @@
           <izz>23.570161273</izz>
         </inertia>
       </inertial>
-<!--      <collision name="collision">-->
-<!--        <geometry>-->
-<!--          <mesh>-->
-<!--            <uri>file://models/aws_robomaker_retail_DeskA_01/meshes/aws_DeskA_01_collision.DAE</uri>-->
-<!--            <scale>1 1 1</scale>-->
-<!--          </mesh>-->
-<!--        </geometry>-->
-<!--      </collision>-->
       <collision name="collision">
-        <pose>0.0 0.0 0.525 0 0 0 </pose>
         <geometry>
-          <box>
-            <size>3.6 1.05 1.05</size>
-          </box>
+          <mesh>
+            <uri>file://models/aws_robomaker_retail_DeskA_01/meshes/aws_DeskA_01_collision.DAE</uri>
+            <scale>1 1 1</scale>
+          </mesh>
         </geometry>
       </collision>
       <visual name="visual">

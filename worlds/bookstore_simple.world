@@ -526,14 +526,14 @@
         <include>
             <uri>model://aws_robomaker_retail_ChairB_01_simple</uri>
         </include>
-        <pose frame="">-4.602947 5.021919 0.030259 -0.001073 -0.001935 0.001439</pose>
+        <pose frame="">-4.602947 5.421919 0.030259 -0.001073 -0.001935 0.001439</pose>
 	</model>
 
        <model name="ChairB_01_010">
         <include>
             <uri>model://aws_robomaker_retail_ChairB_01_simple</uri>
         </include>
-        <pose frame="">-6.109693 5.026245 0.027274 -0.001422 -0.002424 0.000176</pose>
+        <pose frame="">-6.109693 5.426245 0.027274 -0.001422 -0.002424 0.000176</pose>
 	</model>
 
        <model name="ChairB_01_011">
@@ -575,7 +575,7 @@
         <include>
             <uri>model://aws_robomaker_retail_ChairB_01_simple</uri>
         </include>
-        <pose frame="">-6.121492 0.195027 0.027272 0.001357 -0.001950 0.003291</pose>
+        <pose frame="">-6.121492 -0.21 0.027272 0.001357 -0.001950 0.003291</pose>
 	</model>
 
 	<model name="ColumnB_01_002">
